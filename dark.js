@@ -1,8 +1,9 @@
-const dark = document.querySelectorAll(".button")
+const dark = document.querySelectorAll(".button") // we use querySelectorAll to select all the buttons on html
 const light = document.getElementById("light")
 const mybody = document.getElementById("body")
 
-
+// inside dark variable there are a node list of all buttons whose class name is button
+// then we are useing foreach loop to get the access of every clicked button 
 dark.forEach((ele)=>{
   ele.addEventListener("click", ()=>{
    const bodyColor = ele.id
